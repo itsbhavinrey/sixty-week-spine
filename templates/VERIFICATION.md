@@ -2,7 +2,7 @@
 
 - **Previous verification:** <YYYY-MM-DD, or "baseline: plan/00-currency-audit.md">
 - **Days since:** <n>
-- **Verified by:** Claude (<model>) via the `verify-phase` skill
+- **Verified by:** <agent / model> via verify-phase
 - **Sources:** official release pages, package registries, standards bodies and vendor pricing
   pages read on this date. Anything not traceable to one of those is marked `unverified`.
 

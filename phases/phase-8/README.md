@@ -48,7 +48,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 ## Before you start this phase
 
-Run the re-verification. In Cowork or Claude Code, with this repo's folder connected:
+Run the re-verification. In any coding agent with this folder open:
 
 ```
 Verify phase 8

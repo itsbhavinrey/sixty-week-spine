@@ -36,26 +36,22 @@ Actions free, which the plan depends on.
 
 ---
 
-## Using it with Claude Cowork
+## Using it with a coding agent
 
-### One-time setup
+Open this folder in Cursor, Codex, Zed, or Claude. [`AGENTS.md`](AGENTS.md) is the always-on
+file: TypeScript only, 15 hrs/week, ₹0 budget, serverless, India PBC target — and the one rule:
 
-1. **Open the Claude desktop app** and start a task (or open an existing one).
-2. **Click "Add folder"** and pick the `sixty-week-spine` directory. Claude can now read and
-   write the repo directly on your Mac.
-3. **Say `hello`.** Claude reads [`CLAUDE.md`](CLAUDE.md) automatically. That file tells every
-   session your constraints — TypeScript only, 15 hrs/week, ₹0 budget, serverless, India PBC
-   target — and, most importantly, the one rule:
+> Never state a version number, release date, spec revision or free-tier limit from memory.
+> Read it from a primary source or write `unverified`.
 
-   > Never state a version number, release date, spec revision or free-tier limit from memory.
-   > Read it from a primary source or write `unverified`.
+Without that line, a future session will cheerfully hallucinate versions into your verification
+files and you will trust them for months.
 
-   Without that line, a future session will cheerfully hallucinate versions into your
-   verification files and you will trust them for months.
+Skills live in [`.agents/skills/`](.agents/skills/) (`verify-phase`, `week-check`,
+`ship-project`). Cursor, Codex, and Zed load `AGENTS.md` and those skills natively. Claude Code
+needs [`CLAUDE.md`](CLAUDE.md), which imports `AGENTS.md` and points at the same skill files.
 
-4. **Check the skills loaded.** Ask Claude "what skills do you have here?" You should see
-   `verify-phase`, `week-check` and `ship-project`. If they don't appear, the fallback works
-   fine — see [Fallback](#fallback) below.
+If the skills do not appear in the catalog, see [Fallback](#fallback) below.
 
 ### The two loops
 
@@ -65,8 +61,9 @@ Actions free, which the plan depends on.
 Week check
 ```
 
-Claude runs `scripts/status.py`, tells you the week and phase, what ships, whether you're behind,
-and whether the current phase's verification has gone stale. It will not tick anything for you.
+The agent runs `scripts/status.py`, tells you the week and phase, what ships, whether you're
+behind, and whether the current phase's verification has gone stale. It will not tick anything
+for you.
 
 **At the start of every phase — takes about 30 minutes, nine times over 14 months**
 
@@ -74,10 +71,10 @@ and whether the current phase's verification has gone stale. It will not tick an
 Verify phase 3
 ```
 
-This is the loop the repo is built around. Claude:
+This is the loop the repo is built around. The agent:
 
 1. reads `phases/phase-3/topics.md` and the newest file in `phases/phase-3/verified/`
-2. fans out parallel research agents across the topic clusters, each instructed to read only
+2. fans out parallel research across the topic clusters, each instructed to read only
    primary sources and to write `unverified` rather than guess
 3. writes `phases/phase-3/verified/<today>.md`
 4. **diffs it against the previous audit** and reports what moved
@@ -99,14 +96,14 @@ Start P3.2
 Is P3.2 ready to ship?
 ```
 
-Claude pulls the full spec from [`plan/01-roadmap.md`](plan/01-roadmap.md), scaffolds from
+The agent pulls the full spec from [`plan/01-roadmap.md`](plan/01-roadmap.md), scaffolds from
 [`templates/PROJECT_README.md`](templates/PROJECT_README.md), and — the useful part — reads the
 out-of-scope list back to you before you write any code. Gold-plating is how a 10-hour project
 becomes a 30-hour one.
 
 ### Fallback
 
-If the skills don't load in your Cowork build, nothing breaks. Open
+If the skills don't load, nothing breaks. Open
 [`plan/02-staying-current.md`](plan/02-staying-current.md), copy the re-verification prompt,
 paste `phases/phase-N/topics.md` into the bracket, and send it. Same result, one extra step.
 
@@ -163,21 +160,8 @@ progress/
 templates/                  PROJECT_README.md · ADR.md · VERIFICATION.md
 scripts/status.py           where am I, is my verification stale (stdlib only)
 data/plan.json              machine-readable phases, weeks, projects, dates
-.claude/                    the three skills, and slash commands for Claude Code
-```
-
----
-
-## Using it with Claude Code
-
-Same repo, same skills. From the CLI:
-
-```bash
-cd sixty-week-spine
-claude
-> /week
-> /verify 3
-> /ship P3.2
+.agents/skills/             week-check, verify-phase, ship-project
+.claude/commands/           Claude-only slash adapters (`/week`, `/verify`, `/ship`)
 ```
 
 ---

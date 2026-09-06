@@ -7,3 +7,8 @@ node_modules/
 
 goal
 goal.pub
+
+# .agents/ is the canonical app-agnostic skills dir here, not a Codex mirror.
+# Override the global ~/.config/git/ignore rule that excludes it.
+!.agents/
+!.agents/**

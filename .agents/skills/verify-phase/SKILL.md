@@ -21,13 +21,13 @@ decaying ever since. Run this before starting a phase, not after.
 
 Do **not** research serially — it is slow and you will run out of patience before you run out of
 topics. Split the topic list into 3–6 clusters by kind (language/runtime, data, infra,
-AI stack, security/specs, free tiers) and dispatch one `Agent` per cluster **in a single
-message** so they run in parallel.
+AI stack, security/specs, free tiers) and fan out parallel research (subagents or parallel
+fetches) **in a single turn**.
 
-Give every agent this framing verbatim, because it is what makes the output trustworthy:
+Give every researcher this framing verbatim, because it is what makes the output trustworthy:
 
 > Today is `<real date>`. You are doing a currency audit. Your training data is stale — verify
-> every fact with WebSearch/WebFetch against primary sources (official release pages, GitHub
+> every fact against primary sources (official release pages, GitHub
 > releases, package registries, standards bodies, vendor pricing pages). Do not answer from
 > memory. If you cannot verify something from a primary source, say "unverified" — never guess,
 > and never infer a version from a blog post or comparison article.
@@ -45,8 +45,8 @@ Then, per cluster, ask for exactly this and nothing else:
    whether a card is now required.
 6. Security advisories, licence changes, EOL dates.
 
-Ask each agent to return a compact table plus a short "corrections and surprises" list, and to
-mark anything it could not source as `unverified`. Keep each agent under ~1000 words.
+Ask each researcher to return a compact table plus a short "corrections and surprises" list, and
+to mark anything it could not source as `unverified`. Keep each cluster under ~1000 words.
 
 ## Step 2 — write the file
 

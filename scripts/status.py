@@ -110,13 +110,13 @@ def main():
     if v is None:
         print(f'    {C["r"]}Phase {ph["id"]} has never been verified.{C["x"]} '
               f'Baseline is {P["baseline_verified"]}.')
-        print(f'    {C["d"]}Ask Claude: "Verify phase {ph["id"]}"{C["x"]}')
+        print(f'    {C["d"]}Ask: "Verify phase {ph["id"]}"{C["x"]}')
     else:
         age = (TODAY - v).days
         tone = C["r"] if age > STALE_DAYS else (C["y"] if age > STALE_DAYS * 0.6 else C["g"])
         print(f'    Phase {ph["id"]} last verified {tone}{v} ({age} days ago){C["x"]}')
         if age > STALE_DAYS:
-            print(f'    {C["r"]}Stale.{C["x"]} Ask Claude: "Verify phase {ph["id"]}"')
+            print(f'    {C["r"]}Stale.{C["x"]} Ask: "Verify phase {ph["id"]}"')
 
     nxt = next((p for p in P["phases"] if p["weeks"][0] > wk), None)
     if nxt and (date.fromisoformat(nxt["start"]) - TODAY).days <= 21:
