@@ -56,7 +56,7 @@ progress/        weeks.md (60 ticks) and projects.md (22 repos + live URLs)
 templates/       PROJECT_README.md, ADR.md, VERIFICATION.md
 scripts/         status.py — where am I, is my verification stale
 data/plan.json   machine-readable phases, weeks, projects, dates
-.agents/skills/  week-check, verify-phase, ship-project
+.agents/skills/  week-check, verify-phase, ship-project (.claude/skills symlinks here)
 ```
 
 ## Skills in this repo

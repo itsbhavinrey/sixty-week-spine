@@ -49,7 +49,8 @@ files and you will trust them for months.
 
 Skills live in [`.agents/skills/`](.agents/skills/) (`verify-phase`, `week-check`,
 `ship-project`). Cursor, Codex, and Zed load `AGENTS.md` and those skills natively. Claude Code
-needs [`CLAUDE.md`](CLAUDE.md), which imports `AGENTS.md` and points at the same skill files.
+reads [`CLAUDE.md`](CLAUDE.md), which imports `AGENTS.md`, and finds the skills through
+`.claude/skills` — a symlink to `.agents/skills`, so there is still only one copy of each.
 
 If the skills do not appear in the catalog, see [Fallback](#fallback) below.
 
@@ -160,7 +161,8 @@ progress/
 templates/                  PROJECT_README.md · ADR.md · VERIFICATION.md
 scripts/status.py           where am I, is my verification stale (stdlib only)
 data/plan.json              machine-readable phases, weeks, projects, dates
-.agents/skills/             week-check, verify-phase, ship-project
+.agents/skills/             week-check, verify-phase, ship-project — the canonical copy
+.claude/skills              symlink → ../.agents/skills, so Claude Code autoloads them
 .claude/commands/           Claude-only slash adapters (`/week`, `/verify`, `/ship`)
 ```
 
