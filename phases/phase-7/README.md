@@ -36,6 +36,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Docker Compose + make demo + asciinema
 - **Difficulty:** High
+- **Brief:** [`projects/P7.1.md`](projects/P7.1.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P7.1`
 - **Status:** ⬜ not started
 
@@ -52,6 +53,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Render free + Cloudflare Pages
 - **Difficulty:** Medium
+- **Brief:** [`projects/P7.2.md`](projects/P7.2.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P7.2`
 - **Status:** ⬜ not started
 
@@ -68,6 +70,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Docker Compose + Pages visualizer
 - **Difficulty:** High · **optional — cut this first if you are running late**
+- **Brief:** [`projects/P7.3.md`](projects/P7.3.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P7.3`
 - **Status:** ⬜ not started
 
@@ -84,6 +87,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** kind + make demo + GIF
 - **Difficulty:** Medium
+- **Brief:** [`projects/P7.4.md`](projects/P7.4.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P7.4`
 - **Status:** ⬜ not started
 
@@ -100,6 +104,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** GitHub Pages
 - **Difficulty:** Medium
+- **Brief:** [`projects/P7.5.md`](projects/P7.5.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P7.5`
 - **Status:** ⬜ not started
 

@@ -32,6 +32,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Cloudflare Workers + Neon
 - **Difficulty:** Medium
+- **Brief:** [`projects/P3.1.md`](projects/P3.1.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P3.1`
 - **Status:** ⬜ not started
 
@@ -48,6 +49,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Cloudflare Workers + Neon
 - **Difficulty:** High
+- **Brief:** [`projects/P3.2.md`](projects/P3.2.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P3.2`
 - **Status:** ⬜ not started
 
@@ -64,6 +66,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Cloudflare Workers + Neon
 - **Difficulty:** Medium
+- **Brief:** [`projects/P3.3.md`](projects/P3.3.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P3.3`
 - **Status:** ⬜ not started
 
@@ -80,6 +83,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Cloudflare Workers + Neon
 - **Difficulty:** Medium
+- **Brief:** [`projects/P3.4.md`](projects/P3.4.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P3.4`
 - **Status:** ⬜ not started
 

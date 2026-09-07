@@ -29,6 +29,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Cloudflare Pages + GitHub template repo
 - **Difficulty:** Low
+- **Brief:** [`projects/P0.1.md`](projects/P0.1.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P0.1`
 - **Status:** ⬜ not started
 
@@ -45,6 +46,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** npm + asciinema
 - **Difficulty:** Low
+- **Brief:** [`projects/P0.2.md`](projects/P0.2.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P0.2`
 - **Status:** ⬜ not started
 

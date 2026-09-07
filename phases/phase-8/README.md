@@ -35,6 +35,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Cloudflare Workers + Neon + GitHub App
 - **Difficulty:** High
+- **Brief:** [`projects/C1.md`](projects/C1.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `C1`
 - **Status:** ⬜ not started
 

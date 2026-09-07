@@ -33,6 +33,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** GHCR (images are the artifact)
 - **Difficulty:** Low
+- **Brief:** [`projects/P4.1.md`](projects/P4.1.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P4.1`
 - **Status:** ⬜ not started
 
@@ -49,6 +50,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** GitHub Actions reusable workflow
 - **Difficulty:** Medium
+- **Brief:** [`projects/P4.2.md`](projects/P4.2.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P4.2`
 - **Status:** ⬜ not started
 
@@ -65,6 +67,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Grafana Cloud + Axiom + Sentry
 - **Difficulty:** Medium
+- **Brief:** [`projects/P4.3.md`](projects/P4.3.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P4.3`
 - **Status:** ⬜ not started
 
@@ -81,6 +84,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Grafana Cloud (public dashboard)
 - **Difficulty:** Medium
+- **Brief:** [`projects/P4.4.md`](projects/P4.4.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P4.4`
 - **Status:** ⬜ not started
 

@@ -37,6 +37,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Cloudflare Workers + D1
 - **Difficulty:** Medium
+- **Brief:** [`projects/P6.1.md`](projects/P6.1.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P6.1`
 - **Status:** ⬜ not started
 
@@ -53,6 +54,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Cloudflare Workers + GitHub Actions
 - **Difficulty:** Medium
+- **Brief:** [`projects/P6.2.md`](projects/P6.2.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P6.2`
 - **Status:** ⬜ not started
 
@@ -69,6 +71,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** GitHub Actions + Pages
 - **Difficulty:** Medium
+- **Brief:** [`projects/P6.3.md`](projects/P6.3.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P6.3`
 - **Status:** ⬜ not started
 
@@ -85,6 +88,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Neon pgvector + Cloudflare Workers
 - **Difficulty:** High
+- **Brief:** [`projects/P6.4.md`](projects/P6.4.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P6.4`
 - **Status:** ⬜ not started
 
@@ -101,6 +105,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Cloudflare Workers
 - **Difficulty:** High
+- **Brief:** [`projects/P6.5.md`](projects/P6.5.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P6.5`
 - **Status:** ⬜ not started
 
@@ -117,6 +122,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** GitHub App + Cloudflare Workers
 - **Difficulty:** High
+- **Brief:** [`projects/P6.6.md`](projects/P6.6.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P6.6`
 - **Status:** ⬜ not started
 
@@ -133,6 +139,7 @@ You may move on when this is true without looking anything up. Not when the week
 
 - **Deploy target:** Cloudflare Workers
 - **Difficulty:** Low
+- **Brief:** [`projects/P6.7.md`](projects/P6.7.md)
 - **Full spec:** [`plan/01-roadmap.md`](../../plan/01-roadmap.md) → search `P6.7`
 - **Status:** ⬜ not started
 
