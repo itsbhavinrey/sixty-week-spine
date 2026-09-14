@@ -1,14 +1,2 @@
-.DS_Store
-__pycache__/
-*.pyc
-.venv/
-node_modules/
-*.local.md
-
 goal
 goal.pub
-
-# .agents/ is the canonical app-agnostic skills dir here, not a Codex mirror.
-# Override the global ~/.config/git/ignore rule that excludes it.
-!.agents/
-!.agents/**
