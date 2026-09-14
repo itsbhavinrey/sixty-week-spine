@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A question-first JavaScript DSA interview course." />
+  <title>DSA, one question at a time</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#/">
+        <span class="brand-mark">{ }</span>
+        <span>JS · DSA</span>
+      </a>
+      <div class="progress-card">
+        <div class="progress-copy"><span>Your progress</span><strong id="progressText">0 / 75</strong></div>
+        <div class="progress-track"><span id="progressBar"></span></div>
+      </div>
+      <nav id="courseNav" aria-label="Course map"></nav>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <button class="icon-button menu-button" id="menuButton" aria-label="Open course map">☰</button>
+        <a href="#/" class="crumb">Course map</a>
+        <div class="top-actions">
+          <button class="quiet-button" id="resetButton">Reset progress</button>
+          <button class="icon-button theme-button" id="themeButton" aria-label="Toggle color theme">◐</button>
+        </div>
+      </header>
+      <div id="app" tabindex="-1"></div>
+    </main>
+  </div>
+  <div class="scrim" id="scrim"></div>
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
