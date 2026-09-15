@@ -1,0 +1,21 @@
+- fundamentals(os things like cli tools and commands,network things like http, ssh, dns, tcp, udp etc)
+- vcs and vcs hosting (git and github)
+- testing and performance(accessibility, unit, integration, e2e, web vitals, lighthouse, etc)
+- dev environment (package managers, node) and deployment (CI/CD, docker, kubernetes, etc)
+- documentation (api docs, dev docs, etc)
+
+- how broswers work(CRP, Browser engines)
+- css(basic html, css in js: tailwind, preprocessors and such things, css modules)
+- js/nodejs/ts (eventloop, promises, modules, etc)
+- react(lifecycle, hooks, context, fiber, etc)
+- tooling config(linter, formatter, bundler, etc) and typechecking(typescript, etc)
+- newer stuff:ssr, ssg, csr, etc (hydration, nextjs)
+
+- database (sql, nosql: redis, etc)
+- api (rest, graphql, websockets, sse, webhooks, integration patterns like ratelimiting,versioning,microservices, BFF, gateway, etc)
+- authentication (jwt, oauth, etc) and authorization (rbac, abac, etc) and websecurity (cors, etc)
+- caching (redis)
+- webservers (nginx, apache, etc)
+- async workflows: message brokers (kafka), queues (redis), event driven architecture
+- search and analytics (elasticsearch, kibana, etc)
+- logging, monitoring, observability (sentry, opentelemetry, grafana, prometheus, etc)
